@@ -632,6 +632,15 @@ header{
 	color: black;
 	
 }
+.footer-4 i{
+	margin-right: 16px;
+}
+.footer-4 p{
+	margin-bottom: 8px;
+}
+.d-flex{
+	display: flex;
+}
 .copyright p{
 	font-size: 14px;
 	font-weight: 400;
@@ -641,3 +650,4 @@ header{
 .copyright p a:hover{
 	color: #82ae46;
 }
+
