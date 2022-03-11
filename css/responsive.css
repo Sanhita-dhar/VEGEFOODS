@@ -1,0 +1,144 @@
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  
+}
+/*for all mobail device*/
+@media (max-width: 767px) {
+  .container{
+    width: 90%;
+  }
+  .navbar-section{
+    display: none;
+  }
+  .first, .middle, .last{
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+.top-header{
+  padding: 32px 0px;
+}
+.banner-content h1{
+  font-size: 44px;
+}
+.f-item-gallery{
+  grid-template-columns: auto;
+}
+.f-item{
+  margin-bottom: 32px;
+}
+.fc-gallery{
+  display: flex;
+  flex-direction: column;
+}
+.fc-item{
+  flex-basis: 100%;
+}
+.product-gallery{
+  grid-template-columns: auto;
+}
+.deal-content{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 42px;
+}
+.application-row{
+   grid-template-columns: auto;
+   padding-bottom: 32px;
+
+}
+.subscribe-row{
+  flex-direction: column;
+}
+.s-left{
+  padding-bottom: 30px;
+}
+
+.footer-content{
+  flex-direction: column;
+}
+footer{
+  text-align: center;
+}
+.footer-1, .footer-2, .footer-3, .footer-4{
+  border-radius: 1px solid blue;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+}
+.second{
+  background-position: inherit;
+}
+.d-flex{
+  display: block;
+}
+.featurs{
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+h2{
+  font-size: 32px !important;
+}
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+/*@media (min-width: 320px) and (max-width: 480px) {
+*/  
+  /* CSS */
+  
+}
