@@ -24,11 +24,15 @@
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+	<!-- custom responsive -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 	
 	
 
 </head>
-<body>
+<body onload="loading()">
+	<!-- preloader -->
+	<div id="preloader"></div>
 	<!-- header section code start -->
 	<header>
 		<!-- top header section -->
@@ -37,11 +41,11 @@
 
 				<span class="first">
 					<i class="fa fa-phone"></i>
-					<span>+966 50 753 2716</span>
+					<span>+966 78 144 394</span>
 				</span>
 				<span class="middle">
 					<i class="fa fa-paper-plane"></i>
-					<span>sanhitadhar@gmail.com</span>
+					<span>sanhitadhar394@gmail.com</span>
 				</span>
 				<span class="last">3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span>
 
@@ -80,6 +84,37 @@
 						    </li>
 					    </ul>
 				    </div>
+
+				    <span class="hambuger-icon" onclick="openMenu()"><i class="fa fa-bars"></i></span>
+
+				    <div class="mobile-menu">
+				    	<div id="cross" onclick="closeMenu()">
+				    		<i class="fa fa-times" aria-hidden="true"></i>
+				    	</div>
+				      <ul>
+							<li><a href="">Home</a></li>
+						    <li>
+						    	<a href="">Shop <i class="fa fa-caret-down"></i></a>
+						    	<div class="has-sub-menu">
+						    		<ul class="sub-menu">
+						    			<li><a href="">Shop</a></li>
+						    			<li><a href="">Wishlist</a></li>
+						    			<li><a href="">Single Product</a></li>
+						    			<li><a href="">Cart</a></li>
+						    			<li><a href="">Checkout</a></li>
+						    		</ul>
+						    	</div>
+						    </li>
+						    <li><a href="">About</a></li>
+						    <li><a href="">Blog</a></li>
+					    	<li><a href="">Contact</a></li>
+					    	<li>
+					    		<a href="">
+								<i class="fa fa-shopping-cart"></i>[0]
+							    </a>
+						    </li>
+					  </ul>	
+				    </div>
 				</div>
 
 			</div>
@@ -101,9 +136,9 @@
 
 	<!-- company features section code start -->
 	<section class="features">
-		<div class="container">
-			
-			<div class="f-item-gallery">
+		<div class="container"> 
+		 	    
+	        <div class="f-item-gallery">
 				<div class="f-item">
 					<span class="f-icon">
 						<img src="icon/shipped.png">
@@ -132,11 +167,14 @@
 					<h6>SUPPORT</h6>
 					<p>24/7 SUPPORT</p>
 				</div>
-			</div>
+	       </div>	
+
+		 </div>
 
 		</div>
 	</section>
 <!-- company features section code end -->
+
 <!-- category section code start -->
 	<section class="f-category">
 		<div class="container">
@@ -184,6 +222,16 @@
 		</div>
 	</section>
 	<!-- category section code end -->
+
+	<!-- video section code start -->
+     <section class="v-contant">
+     	<div class="container">
+     		<video id="videoBG" poster="poster.JPG" autoplay muted loop width="1300">
+            <source src="image/vege.mp4" type="video/mp4">
+            </video>
+     	</div>
+     </section>
+	<!-- video section code end -->
 
 	<!-- products section code start -->
 	<section class="products">
@@ -321,7 +369,6 @@
 	<!-- deal section code start -->
 	<section class="deal">
 		<div class="container">
-
 			<div class="deal-content">
 				<div class="deal-left">
 					<!-- no content -->
@@ -335,9 +382,24 @@
 						<span>$10</span>
 						<span>now $5 only</span>
 					</div>
-					<div class="countdown">
-						
-					</div>
+				    <div class="Count-time">
+    					<div>
+    						<p id="days">00</p>
+    					   <span>Days</span>
+    					</div>
+    					<div>
+    						<p id="hours">00</p>
+    					   <span>Hours</span>
+    					</div>
+    					<div>
+    						<p id="minutes">00</p>
+    					   <span>Minutes</span>
+    					</div>
+    					<div>
+    						<p id="seconds">00</p>
+    					   <span>Seconds</span>
+    					</div>
+    				     </div>
 				</div>
 			</div>
 
@@ -346,14 +408,14 @@
 	<!-- deal section code end -->
 
 	<!-- testimonial section code start -->
-	<section class="testimonial">
+     <section class="testimonial">
 		<div class="container">
 			<!-- section title -->
 			<div class="section-title">
 				<h6>Testimony</h6>
 				<h2>Our satisfied customer says</h2>
 				<p>Far far away, behind the word mountains, far from the countries Vokalia and <br>Consonantia, there live the blind texts. Separated they live in</p>
-			</div>
+			</div> 
 
 
 			<div class="owl-carousel owl-theme mt-4">
@@ -401,16 +463,48 @@
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 					<h4>Garreth Smith</h4>
 					<h6>WEB DEVELOPER</h6>
-				</div></div>
+				</div>
+			</div>
 				    
 	        </div>
 			
 			</div>
 		</div>
 		
-	</section>
+	</section>  
 	
 	<!-- testimonial section code end -->
+
+	<!-- accordion code start -->
+	<button class="accordion">Fruits</button>
+		<div class="panel">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<button class="accordion">Vegetables</button>
+		<div class="panel">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<button class="accordion">Fruit Juice</button>
+		<div class="panel">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<!-- accordion code end -->
+
+	<!-- all popup design code start -->
+	<div class="quickView-modal">
+		<div class="item-wrapper">
+			<div class="closebtn" onclick="closeModal()"></div>
+			<img src="image/product1.png">
+			<h2>Bell Pepper</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It haLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
+			<button>Add to cart</button>
+		</div>
+		
+	</div>
+	<!-- all popup design code end -->
+
 	<!-- application section code start -->
 	<section class="application">
 		<div class="container">
@@ -444,60 +538,89 @@
 		</div>
 	</section>
     <!-- from section code end -->
-    <!-- footer section code start -->
-    <footer class="footer">
-    	<div class="container">
-    		<div class="main-footer">
-    			<div class="footer-content">
-		    		<div class="footer-1">
-		    			<h6>Vegefoods</h6>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-					    <div class="footer-icon">
-						<a href=""><i class="fa fa-twitter"></i></a>
-						<a href=""><i class="fa fa-facebook"></i></a>
-						<a href=""><i class="fa fa-instagram"></i></a>
-		    		    </div>
-		    		</div>
-	    			<div class="footer-2">
-	    				<h6>Menu</h6>
-					    <ul class="f-menu">
-						<li><a href="">Shop</a></li>
-						<li><a href="">About</a></li>
-						<li><a href="">Journal</a></li>
-						<li><a href="">Contact us</a></li>
-					    </ul>
-	    			</div>
-	    		    <div class="footer-3">
-	    				<h6>Help</h6>
-					   <ul class="f-menu">
-						<li><a href="">Shipping Information</a></li>
-						<li><a href="">Returns & Exchange</a></li>
-						<li><a href="">Terms & Conditions</a></li>
-						<li><a href="">Privacy Policy</a></li>
-					   </ul>
-	    			</div>
-	    		    <div class="footer-4">
-	    				<h6>Have a Questions?</h6>
-						<p class="d-flex"><span><i class="fa fa-map-marker"></i></span><span>203 Fake St. Mountain View, San Francisco, California, USA</span></p>
-						<p><i class="fa fa-phone"></i>+2 392 3929 210</p>
-						<p><i class="fa fa-envelope"></i>info@yourdomain.com</p>
-		    		</div>	
-    		</div>
 
-    		<div class="copyright">
-    			<center>
-    				<p>Copyright ©2022 All rights reserved | This template is made with <i class="fa fa-heart"></i> by <a href="index.html">Sanghita</a></p>
-    			</center>
-    		</div>
-    	</div>
-    </footer>
-    <!-- footer section code end -->
+   <!-- footer section code start -->
+	<footer>
+		<div class="container">
+			<div class="main-footer">
+
+				<div class="footer-content">
+					<div class="footer-1">
+						<h6>Vegefoods</h6>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+						<div class="footer-icon">
+							<a href=""><i class="fa fa-twitter"></i></a>
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>
+					<div class="footer-2">
+						<h6>Menu</h6>
+						<ul class="f-menu">
+							<li><a href="">Shop</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Journal</a></li>
+							<li><a href="">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="footer-3">
+						<h6>Help</h6>
+						<ul class="f-menu">
+							<li><a href="">Shipping Information</a></li>
+							<li><a href="">Returns & Exchange</a></li>
+							<li><a href="">Terms & Conditions</a></li>
+							<li><a href="">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="footer-4">
+						<h6>Have a Question?</h6>
+						<p class="display-spane"><span><i class="fa fa-map-marker"></i></span><span>203 Fake St. Mountain View, San Francisco, California, USA</span></p>
+						<p><i class="fa fa-phone"></i>+966 78 144 394</p>
+						<p><i class="fa fa-envelope"></i>sanhitadhar394@gmail.com</p>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<center>
+						<p>Copyright ©2022 All rights reserved by<a href="https://www.facebook.com/profile.php?id=100021156392488"> Sanhita</a></p>
+					</center>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+	<!-- footer section code end -->
 
     <!-- owl js -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/main.js"></script>
+
 	
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
